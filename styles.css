@@ -53,3 +53,52 @@ h3 {
 .card-container:hover .card-img {
     opacity: 0.6;
 }
+
+.container { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-left: 35%;
+}
+
+.words { 
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.one {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    box-shadow: 5px 10px 8px #888888;
+    transition-duration: 0.4s;
+    margin-left: 20px;
+}
+
+button:hover { 
+    background-color: whitesmoke;
+    color: black;
+}
+
+.final { 
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.wrapper { 
+    background-color: whitesmoke;
+    margin-left: 20px;
+}
+
+label, input {
+    display: flex;
+    flex-direction: column;
+}
