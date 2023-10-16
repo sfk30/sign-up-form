@@ -67,7 +67,7 @@ h3 {
 }
 
 .words { 
-    margin-top: 100px;
+    margin-top: 47px;
     margin-left: 20px;
     margin-right: 150px;
 }
@@ -114,18 +114,17 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.form-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
 
 input { 
     display: block;
     width: 300px;
     /* border-color: #E5E7EB; */
     padding: 1.5px;
-}
-
-.form-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
 }
 
 a {
@@ -154,4 +153,9 @@ input:not(:placeholder-shown):not(:focus):invalid {
 
 .mandatory { 
     color: rgb(237, 30, 30);
+}
+
+#error { 
+    color: red;
+    flex-basis: 100%; /*makes the error div break onto new line as it takes the width of full line */
 }
