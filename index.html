@@ -30,22 +30,22 @@
         <form action="" method="get">
         <div class="form-items">
         <label for="fname">First Name
-        <input type="text" name="first-name" id="fname"></label>
+        <input type="text" name="first-name" id="fname" required minlength="1" maxlength="15"></label>
 
         <label for="lname">Last Name
-        <input type="text" name="last-name" id="lname"></label>
+        <input type="text" name="last-name" id="lname" required minlength="1" maxlength="20"></label>
 
         <label for="email">Email
         <input type="email" name="email" id="email" required></label>
 
         <label for="phone-number">Phone number
-        <input type="tel" name="phone-number" id="phone-number"></label>
+        <input type="tel" name="phone-number" id="phone-number" maxlength="11"></label>
 
         <label for="password">Password
-        <input type="password" name="password" id="password"></label>
+        <input type="password" name="password" id="password" required></label>
 
         <label for="confirm-password">Confirm Password
-        <input type="password" name="confirm-password" id="confirm-password"></label>
+        <input type="password" name="confirm-password" id="confirm-password" required></label>
         </div>
 
     </div>
