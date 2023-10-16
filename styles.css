@@ -14,12 +14,6 @@ body {
     /* overflow-y: auto; */
 }
 
-.card__container { 
-    min-height: 100vh;
-    position: relative;
-    width: 35%
-}
-
 .card-img { 
     position: absolute;
     height: 100vh;
@@ -42,7 +36,6 @@ body {
     color: white;
     top: 7rem;
     font-size: 1.2em;
-    font-family: roboto;
 }
 
 h3 { 
@@ -87,7 +80,6 @@ button {
     background-color: black;
     border-radius: 3px;
     box-shadow: 5px 10px 8px #888888;
-    transition-duration: 0.4s;
     margin-left: 20px;
     margin-top: 20px;
 }
