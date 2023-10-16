@@ -119,9 +119,10 @@ input {
     display: block;
     width: 300px;
     /* border-color: #E5E7EB; */
+    padding: 1.5px;
 }
 
-form {
+.form-items {
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
@@ -137,4 +138,20 @@ input:focus {
     border-color: blue;
     box-shadow: 2px 2px 5px grey;
     border-radius: 3px;
+}
+
+input:valid {
+    border-color: green;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 3px;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid {
+    border-color: red;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 3px;
+}
+
+.mandatory { 
+    color: rgb(237, 30, 30);
 }

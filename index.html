@@ -29,23 +29,23 @@
 
         <form action="" method="get">
         <div class="form-items">
-        <label for="fname">First Name
-        <input type="text" name="first-name" id="fname" required minlength="1" maxlength="15"></label>
+        <label for="fname">First Name<span class="mandatory"> *</span> 
+        <input type="text" name="first-name" id="fname" required minlength="2" maxlength="15" placeholder="Jane" aria-required="true"></label>
 
-        <label for="lname">Last Name
-        <input type="text" name="last-name" id="lname" required minlength="1" maxlength="20"></label>
+        <label for="lname">Last Name<span class="mandatory"> *</span> 
+        <input type="text" name="last-name" id="lname" required minlength="2" maxlength="20" placeholder="Doe" aria-required="true"></label>
 
-        <label for="email">Email
-        <input type="email" name="email" id="email" required></label>
+        <label for="email">Email<span class="mandatory"> *</span> 
+        <input type="email" name="email" id="email" required placeholder="email@email.com" aria-required="true"></label>
 
-        <label for="phone-number">Phone number
-        <input type="tel" name="phone-number" id="phone-number" maxlength="11"></label>
+        <label for="phone-number">Phone number<span class="mandatory"> *</span> 
+        <input type="tel" name="phone-number" id="phone-number" maxlength="11" placeholder="07123456789" required aria-required="true"></label>
 
-        <label for="password">Password
-        <input type="password" name="password" id="password" required></label>
+        <label for="password">Password<span class="mandatory"> *</span> 
+        <input type="password" name="password" id="password" required aria-required="true"></label>
 
-        <label for="confirm-password">Confirm Password
-        <input type="password" name="confirm-password" id="confirm-password" required></label>
+        <label for="confirm-password">Confirm Password<span class="mandatory"> *</span> 
+        <input type="password" name="confirm-password" id="confirm-password" required aria-required="true"></label>
         </div>
 
     </div>
