@@ -12,11 +12,17 @@
 body {
     min-height: 100vh;
     /* overflow-y: auto; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container { 
+    min-height: 100vh;
 }
 
 .card-img { 
     position: absolute;
-    min-height: 100vh;
+    height: 100%;
     width: 35%;
     z-index: -1;
     transition: opacity ease-out 250ms;
@@ -150,4 +156,16 @@ input:not(:placeholder-shown):not(:focus):invalid {
 #error { 
     color: red;
     flex-basis: 100%; /*makes the error div break onto new line as it takes the width of full line */
+}
+
+@media only screen and (max-width: 1000px) {
+    .card-container, .card-body, h3, #odin, #car {
+        display: none;
+    }
+
+    .container, .words, .wrapper { 
+        margin: 0;
+        padding: 20px 10px 0px;
+        width: 100%;
+    }
 }
